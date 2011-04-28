@@ -5,7 +5,7 @@ libptest_SRC = \
 
 libphp_SCRIPTS        = libptest.php
 CLEANFILES            = $(libphp_SCRIPTS)
-nobase_libphp_SCRIPTS = $(libhello_SRC)
+nobase_libphp_SCRIPTS = $(libptest_SRC)
 
 @MAKE_GNUWEB@
 

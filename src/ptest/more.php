@@ -26,12 +26,12 @@ function ok($test, $msg=null, $err=null)
 
 function is($got, $expected, $msg=null)
 {
-   return ok($got === $expected, $msg, "#      got: $got\n# expected: $expected");
+   return ok($got === $expected, $msg, "#      got: " . json_encode($got) . "\n# expected: " . json_encode($expected));
 }
 
 function isnt($got, $expected, $msg=null)
 {
-   return ok($got !== $expected, $msg, "#          got: $got\n# not expected: $expected");
+   return ok($got !== $expected, $msg, "#          got: " . json_encode($got) . "\n# not expected: " .json_encode($expected));
 }
 
 function like($test, $regex, $msg=null)
